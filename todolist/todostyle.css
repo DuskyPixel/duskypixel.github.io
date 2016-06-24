@@ -1,0 +1,105 @@
+/*
+    box-sizing needs web kit browser support stuff
+    */
+
+body{
+    font-family: 'Roboto', 'Arial';
+    background: #abf;
+}
+#mainContainer{
+
+}
+.container1{
+
+    width: 260px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    margin-right: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.02);
+    float:left;
+}
+h1{
+    background: #2A7689;
+    color: white;
+    margin: 0;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+}
+.plusButton{
+    float: right;
+    line-height: 36px;
+}
+.delete, .promote{
+    background: #e74c3c;
+    height: 30px;
+
+    text-align: center;
+    color: white;
+    display: inline-block;
+    transition: 1s linear;
+    opacity: .15;
+
+}
+
+.promote{
+    background: darkgreen;
+
+    float: right;
+}
+.taskName{
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 0;
+    margin: 0;
+    background: #BBDAEB;
+    line-height: 28px;
+    color: #333;
+}
+li span{
+    height: 0px;
+    width: 30px;
+    opacity: 1;
+}
+li:nth-child(2n){
+    background: #B3C9E3;
+}
+li:hover span{
+    opacity: 1;
+}
+
+.taskName:hover{
+    width: 200px;
+}
+input{
+    font-size: 18px;
+    background: #B3C9E3;
+    color: darkgreen;
+    width: 100%;
+    padding: 6px 13px 6px 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid skyblue;
+    outline: none;
+    display: none;
+}
+input:focus{
+    background: white;
+    border: 3px solid skyblue;
+    outline: none;
+
+}
+.completed{
+    color: lightslategrey;
+    text-decoration: line-through;
+}
