@@ -7,10 +7,10 @@ var taskIDCount = 0;
 function Task(name, taskID,level) {
     this._name = name;
     this._taskID = taskID;
-    this._description = "";
-    this._priority = 1;
-    this._isBug = false;
-    this._isFinished = false;//finished are moved to bottom and hidden with 0 priority, checkbox can toggle show or not to show
+    this._description = "";//not used yet
+    this._priority = 1;//not used yet
+    this._isBug = false;//not used yet
+    this._isFinished = false;//not used yet
     this._level = level;
 
     this.promote = function (){
@@ -124,35 +124,3 @@ $('.plusButton').click(function() {
     $('input[type="text"]').fadeOut();
     $(this).closest('.container1').children('input[type="text"]').fadeToggle(400);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-features
-----------
-button on right side that will promote task to next level
-each task has default priority of 1, you can give it higher rating that will sort from highest to lowest
-clicking task middle to rename
-----------
-confirmation for delete
-
-planning
-working on (task demoted from completed has a bug icon)
-completed (can not delete completed, but can demote)
-
-
-
-
-
- */
